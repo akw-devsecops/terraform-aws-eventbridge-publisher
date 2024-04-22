@@ -14,10 +14,6 @@ resource "aws_iam_policy" "this" {
 
 # attach the policy to the service-role
 resource "aws_iam_role_policy_attachment" "this" {
-  role       = data.aws_iam_role.service_role.name
+  role       = var.service_role_name
   policy_arn = aws_iam_policy.this.arn
-}
-
-data "aws_iam_role" "service_role" {
-  name = var.service_role_name
 }
