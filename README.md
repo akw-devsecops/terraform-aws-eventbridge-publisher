@@ -34,5 +34,7 @@ No modules.
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_iam_policy_eventhub"></a> [iam\_policy\_eventhub](#output\_iam\_policy\_eventhub) | IAM policy to give permissions for the domain bus (eventhub) |
 <!-- END_TF_DOCS -->
